@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">tarea06Alarmas</string>
+    <string name="alarm">Alarma</string>
+    <string name="clock">Reloj mundial</string>
+    <string name="chronometer">Cronómetro</string>
+    <string name="timer">Temporizador</string>
+    <string name="edit">Editar</string>
+    <string name="settings">Ajustes</string>
+    <string name="fab_button_description">Botón flotante para añadir nuevas alarmas</string>
+</resources>
