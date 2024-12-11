@@ -53,7 +53,6 @@
         android:layout_margin="@dimen/margin"
         android:contentDescription="@string/fab_button_description"
         app:icon="@drawable/ic_add"
-        android:width="@dimen/margin"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
