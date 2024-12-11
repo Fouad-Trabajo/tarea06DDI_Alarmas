@@ -7,4 +7,7 @@
     <string name="edit">Editar</string>
     <string name="settings">Ajustes</string>
     <string name="fab_button_description">Botón flotante para añadir nuevas alarmas</string>
+    <string name="alarm1"><b>7:30</b></string>
+    <string name="description_alarm">Sonar una vez       |</string>
+    <string name="description2_alarm">Alarma despertador</string>
 </resources>
