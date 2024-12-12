@@ -9,7 +9,7 @@ import com.example.tarea06alarmas.features.time.domain.model.Time
 class TimeAdapter : ListAdapter<Time, TimeViewHolder>(TimeDiffUtil()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TimeViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.alarm_item, parent)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.alarm_item, parent,false)
         return TimeViewHolder(view)
     }
 
