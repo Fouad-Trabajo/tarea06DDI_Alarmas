@@ -10,9 +10,9 @@
         android:id="@+id/cardview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="5dp"
-        app:cardCornerRadius="@dimen/margin_s"
-        app:cardElevation="@dimen/margin_s"
+        android:layout_margin="@dimen/margin_s"
+        app:cardCornerRadius="@dimen/margin_xm"
+        app:cardElevation="@dimen/margin_xs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
             android:id="@+id/inner_constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/margin_s">
+            android:layout_margin="@dimen/margin_xm">
 
             <TextView
                 android:id="@+id/title_time"
@@ -38,6 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/description_alarm"
+                android:textSize="@dimen/text_body_size_medium"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title_time" />
 
@@ -45,8 +46,9 @@
                 android:id="@+id/description2_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_s"
+                android:layout_marginStart="@dimen/margin_xs"
                 android:text="@string/description2_alarm"
+                android:textSize="@dimen/text_body_size_medium"
                 app:layout_constraintStart_toEndOf="@+id/description_time"
                 app:layout_constraintTop_toBottomOf="@+id/title_time" />
 

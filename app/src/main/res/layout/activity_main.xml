@@ -40,7 +40,7 @@
         style="?attr/materialIconButtonFilledStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_m"
+        android:layout_margin="@dimen/margin_l"
         android:contentDescription="@string/fab_button_description"
         app:icon="@drawable/ic_add"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"

@@ -13,7 +13,7 @@ class TimeViewHolder(private var view: View) : RecyclerView.ViewHolder(view) {
         binding = AlarmItemBinding.bind(view)
         binding.apply {
             titleTime.text = time.title
-            descriptionTime.text = time.description
+            descriptionTime.text = time.description1
             description2Time.text = time.description2
         }
     }

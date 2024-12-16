@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- App margin -->
+    <dimen name="margin_xs">5dp</dimen>
     <dimen name="margin_s">10dp</dimen>
     <dimen name="margin_m">15dp</dimen>
+    <dimen name="margin_xm">20dp</dimen>
     <dimen name="margin_l">30dp</dimen>
 
 
     <!-- Text size -->
     <dimen name="title_size_medium">35sp</dimen>
+    <dimen name="text_body_size_medium">13sp</dimen>
 </resources>
