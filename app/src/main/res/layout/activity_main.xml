@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.example.tarea06alarmas.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar_layout"
@@ -14,16 +14,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <!--
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    android:layout_height="wrap_content">
+                         </com.google.android.material.appbar.CollapsingToolbarLayout>
+        -->
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/tool_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:collapsedTitleTextAppearance="@string/edit"
             app:menu="@menu/top_app_bar"
             app:title="@string/alarm" />
 
+
     </com.google.android.material.appbar.AppBarLayout>
 
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_s"
+        android:text="@string/subtitle"
+        android:textSize="@dimen/text_body_size_m"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar_layout" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
@@ -32,7 +50,7 @@
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_bar_layout"
+        app:layout_constraintTop_toBottomOf="@+id/text_subtitle"
         tools:listitem="@layout/alarm_item" />
 
     <Button
@@ -40,9 +58,10 @@
         style="?attr/materialIconButtonFilledStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_l"
+        android:layout_margin="@dimen/margin_xl"
         android:contentDescription="@string/fab_button_description"
         app:icon="@drawable/ic_add"
+        app:iconSize="@dimen/button_size_m"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

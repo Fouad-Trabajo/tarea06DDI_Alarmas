@@ -6,9 +6,12 @@
     <dimen name="margin_m">15dp</dimen>
     <dimen name="margin_xm">20dp</dimen>
     <dimen name="margin_l">30dp</dimen>
+    <dimen name="margin_xl">45dp</dimen>
 
+    <!-- Buttons size -->
+    <dimen name="button_size_m">35dp</dimen>
 
     <!-- Text size -->
-    <dimen name="title_size_medium">35sp</dimen>
-    <dimen name="text_body_size_medium">13sp</dimen>
+    <dimen name="title_size_m">35sp</dimen>
+    <dimen name="text_body_size_m">13sp</dimen>
 </resources>

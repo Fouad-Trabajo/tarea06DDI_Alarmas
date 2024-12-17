@@ -10,4 +10,5 @@
     <string name="alarm1"><b>7:30</b></string>
     <string name="description_alarm">Sonar una vez</string>
     <string name="description2_alarm">Alarma despertador</string>
+    <string name="subtitle">Sonar en 5 horas y 58 minutos</string>
 </resources>

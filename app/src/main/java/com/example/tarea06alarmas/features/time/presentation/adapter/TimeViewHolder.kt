@@ -15,6 +15,13 @@ class TimeViewHolder(private var view: View) : RecyclerView.ViewHolder(view) {
             titleTime.text = time.title
             descriptionTime.text = time.description1
             description2Time.text = time.description2
+            cardview.setOnClickListener {
+                if (time.switchOn) {
+                    //Toast.makeText(this,"Alarma ${time.title} activa",Toast.LENGTH_SHORT).show
+                } else {
+                    //Toast.makeText(this,"Alarma ${time.title} desactivada",Toast.LENGTH_SHORT).show
+                }
+            }
         }
     }
 }
