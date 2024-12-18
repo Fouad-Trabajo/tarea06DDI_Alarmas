@@ -1,6 +1,5 @@
 package com.example.tarea06alarmas.features.time.presentation.adapter
 
-import android.content.Context
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
@@ -21,7 +20,11 @@ class TimeViewHolder(private var view: View) : RecyclerView.ViewHolder(view) {
 
             switchItem.setOnCheckedChangeListener {_,switchOn ->
                 val color = if (switchOn) {
-                    Toast.makeText(view.context,"Alarma ${time.title} activa",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        view.context,
+                        "Alarma ${time.title} activada",
+                        Toast.LENGTH_SHORT
+                    ).show()
                      view.context.getColor(R.color.md_theme_scrim)
 
                 } else {
