@@ -9,7 +9,7 @@
     <dimen name="margin_xl">45dp</dimen>
 
     <!-- Buttons size -->
-    <dimen name="button_size_m">35dp</dimen>
+    <dimen name="button_size_m">40dp</dimen>
 
     <!-- Text size -->
     <dimen name="title_size_m">35sp</dimen>
