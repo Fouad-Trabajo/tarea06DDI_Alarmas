@@ -46,6 +46,14 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity, "Añadir nueva alarma", Toast.LENGTH_SHORT).show()
                 picker.show(supportFragmentManager, "Hora escogida")
             }
+            picker.addOnPositiveButtonClickListener {
+
+                val hour = "${picker.hour}:${picker.minute}" //Convertir el timpo a cadena
+                val time = Time("", hour, "", "Sonar una vez", false)
+                val listTime = listTime.data.toMutableList()
+                listTime.add(time) //Añadir nueva alarma
+                timeAdapter.submitList(listTime) // Actualizar el adapter para que muestre el nuevo item
+            }
         }
     }
 

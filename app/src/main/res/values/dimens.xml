@@ -6,7 +6,7 @@
     <dimen name="margin_m">15dp</dimen>
     <dimen name="margin_xm">20dp</dimen>
     <dimen name="margin_l">30dp</dimen>
-    <dimen name="margin_xl">45dp</dimen>
+    <dimen name="margin_xl">110dp</dimen>
 
     <!-- Buttons size -->
     <dimen name="button_size_m">40dp</dimen>
