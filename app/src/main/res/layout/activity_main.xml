@@ -35,6 +35,8 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="150dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:listitem="@layout/alarm_item" />
 
@@ -49,6 +51,14 @@
         android:contentDescription="@string/fab_button_description"
         app:icon="@drawable/ic_add"
         app:iconSize="@dimen/button_size_m" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation_menu" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
