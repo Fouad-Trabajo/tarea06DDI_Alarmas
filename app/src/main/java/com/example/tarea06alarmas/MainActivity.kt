@@ -49,10 +49,11 @@ class MainActivity : AppCompatActivity() {
             picker.addOnPositiveButtonClickListener {
 
                 val hour = "${picker.hour}:${picker.minute}" //Convertir el timpo a cadena
-                val time = Time("", hour, "", "Sonar una vez", false)
-                val listTime = listTime.data.toMutableList()
-                listTime.add(time) //Añadir nueva alarma
-                timeAdapter.submitList(listTime) // Actualizar el adapter para que muestre el nuevo item
+                val time = Time("", hour, "Sonar una vez", "", false)
+                val newListTime = listTime.data.toMutableList()
+                newListTime.add(time) //Añadir nueva alarma
+                timeAdapter.submitList(newListTime) // Actualizar el adapter para que muestre el nuevo item
+                listTime.data.add(time) //Añadir la nueva alarma a nuestra lista del mock
             }
         }
     }
